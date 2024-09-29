@@ -82,3 +82,31 @@ python som_anomaly_detection.py
 ---
 
 
+
+---
+
+### **About the Dataset**
+
+This dataset contains **217,441** financial transactions, with details such as the transaction amount, type of transaction, and location. It is designed for detecting anomalies in financial activity, such as unusually large transactions or transactions happening in unexpected locations.
+
+The dataset includes the following columns:
+
+- **Timestamp**: The date and time of the transaction.
+- **TransactionID**: A unique identifier for each transaction.
+- **AccountID**: The identifier of the account associated with the transaction.
+- **Amount**: The monetary value of the transaction. The amounts vary significantly, with a minimum of 10.51 and a maximum of 978,942.26.
+- **Merchant**: The merchant involved in the transaction.
+- **TransactionType**: The type of transaction (e.g., debit, credit).
+- **Location**: The geographical location of the transaction.
+
+#### **Dataset Statistics**:
+- **Total Transactions**: 217,441
+- **Average Transaction Amount**: 50,090.03
+- **Minimum Transaction Amount**: 10.51
+- **Maximum Transaction Amount**: 978,942.26
+
+The dataset is ideal for financial anomaly detection, where abnormal patterns in transaction behavior can be identified based on features like the amount, location, and transaction type.
+
+--- 
+
+
