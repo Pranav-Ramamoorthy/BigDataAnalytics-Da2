@@ -211,3 +211,10 @@ Transactions that map to areas of high distance or sparse clusters are considere
 
 In this context, financial transactions that are mapped to regions of the SOM with higher distances might be flagged as **anomalous** transactions, possibly indicating fraud.
 
+---
+# HeatMap
+![WhatsApp Image 2024-09-29 at 22 32 30_ca012cff](https://github.com/user-attachments/assets/dc4b535f-b8ce-4b30-b99f-920b8d37b4da)
+
+# Final Graph
+![WhatsApp Image 2024-09-29 at 23 12 46_f610966f](https://github.com/user-attachments/assets/c223e655-b128-4491-b777-a0605e9ecceb)
+
