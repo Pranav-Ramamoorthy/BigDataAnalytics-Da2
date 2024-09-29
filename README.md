@@ -211,6 +211,73 @@ Transactions that map to areas of high distance or sparse clusters are considere
 
 In this context, financial transactions that are mapped to regions of the SOM with higher distances might be flagged as **anomalous** transactions, possibly indicating fraud.
 
+
+
+---
+
+## **How to Run the Financial Anomaly Detection Script**
+
+### **Step 1: Install Required Libraries**
+
+Before running the script, ensure that the required Python libraries are installed. You can install them using `pip`:
+
+```bash
+pip install numpy pandas scikit-learn matplotlib minisom
+```
+
+### **Step 2: Prepare the Dataset**
+
+1. Ensure your dataset (`financial_transactions.csv`) is available in the same directory as your Python script. The dataset should have the columns: `Amount`, `TransactionType`, and `Location`.
+
+2. If your dataset has a different name, modify the code to match the dataset file name:
+   
+```python
+data = pd.read_csv('your_dataset.csv')
+```
+
+### **Step 3: Run the Script**
+
+You can run the Python script using a terminal or any Python-compatible IDE (like **VS Code**, **PyCharm**, or **Jupyter Notebook**).
+
+#### **Terminal**:
+
+1. Open a terminal (Command Prompt or Terminal on macOS/Linux).
+2. Navigate to the directory where your script is located:
+   
+```bash
+cd path_to_your_script
+```
+
+3. Run the script:
+
+```bash
+python your_script_name.py
+```
+
+#### **Jupyter Notebook**:
+
+If you're using Jupyter Notebook:
+1. Copy and paste the script code into a Jupyter cell.
+2. Run the cell.
+
+### **Step 4: Interpret the Results**
+
+- After running the script, a heatmap will be displayed. This **SOM distance map** will highlight regions of dense transaction clusters and outliers (anomalies).
+  - Cool colors (blue) represent dense clusters of normal transactions.
+  - Warm colors (red) represent sparse areas where anomalies are likely.
+  
+- Each transaction is marked with a black circle. The location of these circles in the distance map can help identify anomalous transactions.
+
+### **Step 5: Review Anomalies**
+
+1. The **winning nodes** for each transaction are printed. These nodes indicate where each transaction maps onto the SOM grid.
+   
+2. By reviewing the distance map, you can identify clusters of normal transactions and potential outliers (far from the dense clusters).
+
+---
+
+This should guide you through running the SOM anomaly detection script successfully. 
+
 ---
 # OUTPUTS
 # HeatMap
